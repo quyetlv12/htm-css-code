@@ -1,0 +1,32 @@
+#header{
+    background-color: #333;
+    padding: 5px;
+}
+#header ul{
+    display: flex;
+    justify-content: space-between;
+}
+#header ul li{
+    color: #fff;
+    list-style: none;
+    transition: all 1s ease-in;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+#header ul li:hover{
+    background-color: #000;
+}
+#header .parent-item{
+    position: relative;
+}
+#header .parent-item:hover .sub-list{
+    display: block;
+}
+#header ul .sub-list{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: aqua;
+    display: none;
+}
